@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c1e4445e7f59b556df3101d987fcfcb",
+    "content-hash": "8fa4b92593ce426a59a131267f89b903",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1636,7 +1636,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/drush-8.x-6.0-rc4.zip",
-                "reference": null,
+                "reference": "8.x-6.0-rc4",
                 "shasum": "b937035f9de947190cc2438decb56483ff7cc1cd"
             },
             "require": {

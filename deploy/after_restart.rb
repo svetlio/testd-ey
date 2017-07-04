@@ -1,0 +1,8 @@
+run "cd #{config.release_path}/web"
+run "../vendor/bin/drush -y cache-rebuild"
+run "../vendor/bin/drush -y updatedb"
+run "../vendor/bin/drush -y config-import"
+run "../vendor/bin/drush -y entup"
+run "../vendor/bin/drush -y config-set system.performance cache.page.max_age 10800"
+run "../vendor/bin/drush -y config-set system.performance css.preprocess 1"
+run "../vendor/bin/drush -y config-set system.performance js.preprocess 1"
