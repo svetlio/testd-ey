@@ -1,4 +1,4 @@
-run "cd #{config.release_path}/web"
+run "exec cd #{config.release_path}/web"
 run "exec ../vendor/bin/drush -y cache-rebuild"
 run "exec ../vendor/bin/drush -y updatedb"
 run "exec ../vendor/bin/drush -y config-import"
