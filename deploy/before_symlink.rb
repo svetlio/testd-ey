@@ -1,0 +1,5 @@
+run "sudo rm -rf #{config.release_path}/web/sites/default/files"
+run "sudo ln -s #{config.shared_path}/drupal/files #{config.release_path}/web/sites/default/files"
+run "sudo ln -s #{config.shared_path}/drupal/files-private #{config.release_path}/web/sites/default/files-private"
+run "sudo rm -f #{config.release_path}/web/sites/default/settings.php"
+run "sudo ln -s #{config.shared_path}/drupal/settings.php #{config.release_path}/web/sites/default/settings.php"
